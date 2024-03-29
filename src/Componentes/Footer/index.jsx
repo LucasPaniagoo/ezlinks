@@ -47,8 +47,8 @@ const Footer = () =>
         <FooterEstilizado>
             <p>Desenvolvido por Lucas Paniago</p>
             <div>
-                <img src={Logos.github.logo} alt={Logos.github.alt} />
-                <img src={Logos.linkedin.logo} alt={Logos.linkedin.alt} />
+                <a href="https://github.com/LucasPaniagoo"><img src={Logos.github.logo} alt={Logos.github.alt} /></a>
+                <a href="https://www.linkedin.com/in/lucaspaniago/"><img src={Logos.linkedin.logo} alt={Logos.linkedin.alt} /></a>
             </div>
         </FooterEstilizado>
     )
