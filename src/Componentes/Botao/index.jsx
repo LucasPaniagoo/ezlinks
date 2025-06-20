@@ -25,6 +25,7 @@ const DivBotao = styled.div`
     margin: 1em 2em;
     :hover{
         background-color: rgb(255, 255, 255, 0.2);
+        padding: 1px;
     }
     @media screen and (max-width: 430px){
         width: 340px;
