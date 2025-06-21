@@ -25,7 +25,6 @@ const DivBotao = styled.div`
     margin: 1em 2em;
     :hover{
         background-color: rgb(255, 255, 255, 0.2);
-        padding: 1px;
     }
     @media screen and (max-width: 430px){
         width: 340px;
@@ -42,17 +41,22 @@ const BotaoEstilizado = styled.a`
     text-decoration: none;
     background: url(${props => compara(props)}) no-repeat;
     background-position: 1em;
+    :hover{
+    background-color: transparent;
+    }
+
 `;
 const Paragrafo = styled.p`
+    background-color: transparent;
     color: #FFFFFF;
     font-size: 20;
-    font-weight: 700;
+    font-weight: 700;    
 `;
 const Botao = ({ rede, link, children }) => 
 {
     
     return(
-            <DivBotao>
+            <DivBotao $rede={rede} href={link}>
                 <BotaoEstilizado $rede={rede} href={link}>
                     <Paragrafo $rede={rede}> {children} </Paragrafo>
                 </BotaoEstilizado>
